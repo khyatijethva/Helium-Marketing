@@ -1,0 +1,163 @@
+:root {
+  --black: #000;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  cursor: url(../cursors/cleaver-cursor.png), pointer !important;
+}
+body {
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: 0;
+  color: var(--black);
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+  cursor: pointer;
+  outline: none !important;
+}
+
+button {
+  outline: none !important;
+}
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a, button, input, textarea, select, div{
+  outline: none;
+  box-shadow: none;
+}
+
+
+/* main css start here */
+body.red {
+  background-color: #1f2e3b;
+  height: auto !important;
+}
+map {
+  width: 1115px;
+  height: 530px;
+}
+.cow-pen {
+  width: 1115px;
+  position: relative;
+}
+section.meat-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.meat-div{
+  position: relative;
+  width: 1100px;
+}
+.overlay-img{
+  position: absolute;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.7);
+}
+.overlay-img.activeimg{
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: scale(1.05);
+}
+#overlayr1 {
+  width: 116px;
+  top: 30px;
+  left: 191px;
+}
+#overlayr2 {
+  width: 127px;
+  top: 233px;
+  left: 260px;
+}
+#overlayr3 {
+  width: 195px;
+  top: 15px;
+  left: 280px;
+}
+#overlayr4 {
+  width: 190px;
+  top: 178px;
+  left: 314px;
+}
+#overlayr5 {
+  width: 170px;
+  top: 15px;
+  left: 468px;
+}
+#overlayr6 {
+  width: 261px;
+  top: 180px;
+  left: 477px;
+}
+#overlayr7 {
+  width: 158px;
+  top: 219px;
+  left: 710px;
+}
+#overlayr8 {
+  width: 158px;
+  top: 270px;
+  right: 76px;
+}
+#overlayr9 {
+  width: 190px;
+  top: 101px;
+  right: 42px;
+}
+#overlayr10 {
+  width: 227px;
+  top: 8px;
+  right: 0;
+}
+#overlayr10.activeimg{
+  transform: scale(1);
+}
+#overlayr11 {
+  width: 130px;
+  top: 16px;
+  right: 225px;
+}
+#overlayr12 {
+  width: 136px;
+  top: 153px;
+  right: 225px;
+}
+#overlayr13 {
+  width: 210px;
+  top: 100px;
+  right: 225px;
+}
+#overlayr14 {
+  width: 114px;
+  top: 20px;
+  right: 353px;
+}
+
+@media screen and (max-width: 1199px) {
+  .container{
+    max-width: 100%;
+  }
+}
